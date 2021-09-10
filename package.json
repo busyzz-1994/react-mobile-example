@@ -10,17 +10,22 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "antd-mobile": "^2.3.4",
+    "babel-plugin-import": "^1.13.3",
+    "less-loader": "7.3.0",
+    "postcss-px-to-viewport": "^1.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "sass": "^1.39.2",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "lint": "eslint src --ext .tsx,.ts,.jsx,.js --cache --fix --max-warnings=0",
+    "analyz": "npm run build -- --stats && npx webpack-bundle-analyzer build/bundle-stats.json"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +44,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "env-cmd": "^10.1.0",
+    "less": "^4.1.1",
+    "react-app-rewired": "^2.1.8"
   }
 }

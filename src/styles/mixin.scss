@@ -1,0 +1,138 @@
+// 在不同 dpr 设备中 1px 边框解决方案
+%dpr-border-base {
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 0 0;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    &::before {
+      width: 200%;
+      height: 200%;
+      transform: scale(calc(1 / 2));
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    &::before {
+      width: 300%;
+      height: 300%;
+      transform: scale(calc(1 / 3));
+    }
+  }
+}
+@mixin dpr-border-top(
+  $size: 1px,
+  $style: solid,
+  $color: #000,
+  $position: relative
+) {
+  position: $position;
+  @extend %dpr-border-base;
+  &::before {
+    border-top: $size $style $color;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    &::before {
+      border-top: $size $style $color;
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    &::before {
+      border-top: $size $style $color;
+    }
+  }
+}
+@mixin dpr-border-bottom(
+  $size: 1px,
+  $style: solid,
+  $color: #000,
+  $position: relative
+) {
+  position: $position;
+  @extend %dpr-border-base;
+  &::before {
+    border-bottom: $size $style $color;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    &::before {
+      border-bottom: $size $style $color;
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    &::before {
+      border-bottom: $size $style $color;
+    }
+  }
+}
+@mixin dpr-border-left(
+  $size: 1px,
+  $style: solid,
+  $color: #000,
+  $position: relative
+) {
+  position: $position;
+  @extend %dpr-border-base;
+  &::before {
+    border-left: $size $style $color;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    &::before {
+      border-left: $size $style $color;
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    &::before {
+      border-left: $size $style $color;
+    }
+  }
+}
+@mixin dpr-border-right(
+  $size: 1px,
+  $style: solid,
+  $color: #000,
+  $position: relative
+) {
+  position: $position;
+  @extend %dpr-border-base;
+  &::before {
+    border-right: $size $style $color;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    &::before {
+      border-right: $size $style $color;
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    &::before {
+      border-right: $size $style $color;
+    }
+  }
+}
+@mixin dpr-border(
+  $size: 1px,
+  $style: solid,
+  $color: #000,
+  $position: relative
+) {
+  position: $position;
+  @extend %dpr-border-base;
+  &::before {
+    border: $size $style $color;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    &::before {
+      border: $size $style $color;
+    }
+  }
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    &::before {
+      border: $size $style $color;
+    }
+  }
+}
