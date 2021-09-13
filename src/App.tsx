@@ -4,15 +4,13 @@
  * @Description:
  */
 import React from 'react';
-import './app.scss';
-import { Button } from 'antd-mobile';
+import { renderRoutes } from 'react-router-config';
+import { BrowserRouter as Router } from 'react-router-dom';
+import routes from 'config/routes';
+
 const App = () => {
-  return (
-    <div>
-      <Button type='primary'>antd-mobile</Button>
-      <div className='test'>tedt</div>
-    </div>
-  );
+  console.log(routes, 'routes');
+  return <Router>{renderRoutes(routes)}</Router>;
 };
 
 export default App;

@@ -1,8 +1,0 @@
-@import '~styles/index.scss';
-.test {
-  height: 300px;
-  box-sizing: border-box;
-  position: relative;
-  margin-top: 30px;
-  @include dpr-border-top();
-}
