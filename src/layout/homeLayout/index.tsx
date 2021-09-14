@@ -15,6 +15,9 @@ const HomeLayout: FC<RouteConfigComponentProps> = ({ route, location }) => {
         <div>
           <Link to={routesPath.home.userInfo}>userInfo</Link>
         </div>
+        <div>
+          <Link to={routesPath.home.component}>component</Link>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,8 @@
+@import '~styles/index.scss';
+
+.container {
+  padding: 15px;
+  margin-bottom: 20px;
+  background: $primary-shallow-color;
+  @include dpr-border-left(10px, solid, $primary-color);
+}

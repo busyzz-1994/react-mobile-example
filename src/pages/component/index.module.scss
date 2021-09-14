@@ -1,0 +1,13 @@
+.imgList {
+  display: flex;
+  .imgBox {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    > img {
+      object-fit: cover;
+      width: 100%;
+      display: block;
+    }
+  }
+}

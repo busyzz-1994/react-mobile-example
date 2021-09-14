@@ -7,3 +7,4 @@
 - [x] 支持在不同 dpr 设备上 1px 边框
 - [x] 支持 `faskclick`
 - [x] iphone X 以上安全区域
+- [x] 支持开发阶段日志调试

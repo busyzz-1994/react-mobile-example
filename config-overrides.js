@@ -1,10 +1,13 @@
+const vConsolePlugin = require('vconsole-webpack-plugin');
 const {
   override,
   fixBabelImports,
   addPostcssPlugins,
   setWebpackOptimizationSplitChunks,
   addWebpackModuleRule,
+  addWebpackPlugin,
 } = require('customize-cra');
+const isDevENV = process.env.NODE_ENV === 'development';
 // vendors regexes
 const reactVendorsRegex =
   /[\\/]node_modules[\\/](react|react-dom|react-router-dom|react-router|history)[\\/]/;
@@ -34,6 +37,12 @@ module.exports = override(
       },
     ],
   }),
+  // 添加调试工具 只在开发环境生效
+  addWebpackPlugin(
+    new vConsolePlugin({
+      enable: isDevENV,
+    })
+  ),
   // 将样式文件中的 px 单位转换为 vw
   addPostcssPlugins([
     require('postcss-px-to-viewport')({

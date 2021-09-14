@@ -1177,6 +1177,18 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fortawesome/fontawesome-common-types@^0.2.36":
+  version "0.2.36"
+  resolved "https://registry.nlark.com/@fortawesome/fontawesome-common-types/download/@fortawesome/fontawesome-common-types-0.2.36.tgz?cache=0&sync_timestamp=1628105317128&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40fortawesome%2Ffontawesome-common-types%2Fdownload%2F%40fortawesome%2Ffontawesome-common-types-0.2.36.tgz#b44e52db3b6b20523e0c57ef8c42d315532cb903"
+  integrity sha1-tE5S2ztrIFI+DFfvjELTFVMsuQM=
+
+"@fortawesome/free-solid-svg-icons@^5.15.3":
+  version "5.15.4"
+  resolved "https://registry.nlark.com/@fortawesome/free-solid-svg-icons/download/@fortawesome/free-solid-svg-icons-5.15.4.tgz?cache=0&sync_timestamp=1628105316356&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40fortawesome%2Ffree-solid-svg-icons%2Fdownload%2F%40fortawesome%2Ffree-solid-svg-icons-5.15.4.tgz#2a68f3fc3ddda12e52645654142b9e4e8fbb6cc5"
+  integrity sha1-Kmjz/D3doS5SZFZUFCueTo+7bMU=
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.36"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -3642,6 +3654,11 @@ cookie-signature@1.0.6:
   resolved "https://registry.yarnpkg.com/cookie-signature/-/cookie-signature-1.0.6.tgz#e303a882b342cc3ee8ca513a79999734dab3ae2c"
   integrity sha1-4wOogrNCzD7oylE6eZmXNNqzriw=
 
+cookie-storage@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.nlark.com/cookie-storage/download/cookie-storage-6.1.0.tgz#291b2f662d961be44f999626593421cbfcf23790"
+  integrity sha1-KRsvZi2WG+RPmZYmWTQhy/zyN5A=
+
 cookie@0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.0.tgz#beb437e7022b3b6d49019d088665303ebe9c14ba"
@@ -3671,6 +3688,11 @@ copy-descriptor@^0.1.0:
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
+copy-text-to-clipboard@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.nlark.com/copy-text-to-clipboard/download/copy-text-to-clipboard-3.0.1.tgz#8cbf8f90e0a47f12e4a24743736265d157bce69c"
+  integrity sha1-jL+PkOCkfxLkokdDc2Jl0Ve85pw=
+
 core-js-compat@^3.6.2, core-js-compat@^3.8.0:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.9.0.tgz#29da39385f16b71e1915565aa0385c4e0963ad56"
@@ -3693,6 +3715,11 @@ core-js@^2.4.0:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
+
+core-js@^3.11.0:
+  version "3.17.3"
+  resolved "https://registry.nlark.com/core-js/download/core-js-3.17.3.tgz#8e8bd20e91df9951e903cabe91f9af4a0895bc1e"
+  integrity sha1-jovSDpHfmVHpA8q+kfmvSgiVvB4=
 
 core-js@^3.6.5:
   version "3.9.0"
@@ -5587,6 +5614,11 @@ gzip-size@5.1.1:
   dependencies:
     duplexer "^0.1.1"
     pify "^4.0.1"
+
+hamt_plus@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.nlark.com/hamt_plus/download/hamt_plus-1.0.2.tgz#e21c252968c7e33b20f6a1b094cd85787a265601"
+  integrity sha1-4hwlKWjH4zsg9qGwlM2FeHomVgE=
 
 handle-thing@^2.0.0:
   version "2.0.1"
@@ -7687,6 +7719,11 @@ multicast-dns@^6.0.1:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
 
+mutation-observer@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.nlark.com/mutation-observer/download/mutation-observer-1.0.3.tgz#42e9222b101bca82e5ba9d5a7acf4a14c0f263d0"
+  integrity sha1-QukiKxAbyoLlup1aes9KFMDyY9A=
+
 nan@^2.12.1:
   version "2.14.2"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
@@ -9249,7 +9286,7 @@ prompts@2.4.0, prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@15.x, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.x, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -9736,6 +9773,14 @@ react-tween-state@^0.1.5:
     raf "^3.1.0"
     tween-functions "^1.0.1"
 
+react-wx-images-viewer@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.nlark.com/react-wx-images-viewer/download/react-wx-images-viewer-1.0.6.tgz#a39592de6e2b1451943565ecc36f8d99c318f6c2"
+  integrity sha1-o5WS3m4rFFGUNWXsw2+NmcMY9sI=
+  dependencies:
+    prop-types "^15.6.0"
+    raf "^3.1.0"
+
 react@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
@@ -9824,6 +9869,13 @@ readdirp@~3.6.0:
   integrity sha1-dKNwvYVxFuJFspzJc0DNQxoCpsc=
   dependencies:
     picomatch "^2.2.1"
+
+recoil@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.nlark.com/recoil/download/recoil-0.4.1.tgz#1cb2171bc98d41361507131a059d7c3525d8c4fe"
+  integrity sha1-HLIXG8mNQTYVBxMaBZ18NSXYxP4=
+  dependencies:
+    hamt_plus "1.0.2"
 
 recursive-readdir@2.2.2:
   version "2.2.2"
@@ -11148,6 +11200,11 @@ supports-hyperlinks@^2.0.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
+svelte-fa@^2.2.1:
+  version "2.3.3"
+  resolved "https://registry.nlark.com/svelte-fa/download/svelte-fa-2.3.3.tgz?cache=0&sync_timestamp=1630410265052&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fsvelte-fa%2Fdownload%2Fsvelte-fa-2.3.3.tgz#b136b32f397ec64fb708b8a6ff5578bdd65f5be7"
+  integrity sha1-sTazLzl+xk+3CLim/1V4vdZfW+c=
+
 svg-parser@^2.0.2:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/svg-parser/-/svg-parser-2.0.4.tgz#fdc2e29e13951736140b76cb122c8ee6630eb6b5"
@@ -11774,6 +11831,25 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+
+vconsole-webpack-plugin@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.nlark.com/vconsole-webpack-plugin/download/vconsole-webpack-plugin-1.7.1.tgz#ecb99e13b50e46e2a523186919377c58692cbccd"
+  integrity sha1-7LmeE7UORuKlIxhpGTd8WGksvM0=
+  dependencies:
+    vconsole "^3.6"
+
+vconsole@^3.6:
+  version "3.9.1"
+  resolved "https://registry.nlark.com/vconsole/download/vconsole-3.9.1.tgz#41c9d311e14a1a68566a1be5243a8667f4c345d3"
+  integrity sha1-QcnTEeFKGmhWahvlJDqGZ/TDRdM=
+  dependencies:
+    "@fortawesome/free-solid-svg-icons" "^5.15.3"
+    cookie-storage "^6.1.0"
+    copy-text-to-clipboard "^3.0.1"
+    core-js "^3.11.0"
+    mutation-observer "^1.0.3"
+    svelte-fa "^2.2.1"
 
 vendors@^1.0.0:
   version "1.0.4"

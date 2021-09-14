@@ -7,9 +7,13 @@ import React from 'react';
 import { renderRoutes } from 'react-router-config';
 import { BrowserRouter as Router } from 'react-router-dom';
 import routes from 'config/routes';
+import { RecoilRoot } from 'recoil';
 const App = () => {
-  console.log(routes, 'routes');
-  return <Router>{renderRoutes(routes)}</Router>;
+  return (
+    <RecoilRoot>
+      <Router>{renderRoutes(routes)}</Router>
+    </RecoilRoot>
+  );
 };
 
 export default App;

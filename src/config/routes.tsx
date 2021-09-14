@@ -13,6 +13,7 @@ const SuspenseComponent = (Component: ComponentType) => (props: any) => {
 /** Home */
 const UserInfo = lazy(() => import('pages/userInfo'));
 const Setting = lazy(() => import('pages/setting'));
+const ComponentPage = lazy(() => import('pages/component'));
 /** Login */
 const Login = lazy(() => import('pages/login'));
 const routes: Array<RouteConfig> = [
@@ -41,6 +42,10 @@ const routes: Array<RouteConfig> = [
       {
         path: routesPath.home.setting,
         component: SuspenseComponent(Setting),
+      },
+      {
+        path: routesPath.home.component,
+        component: SuspenseComponent(ComponentPage),
       },
     ],
   },
