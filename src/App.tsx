@@ -11,7 +11,13 @@ import { RecoilRoot } from 'recoil';
 const App = () => {
   return (
     <RecoilRoot>
-      <Router>{renderRoutes(routes)}</Router>
+      <Router
+        basename={
+          process.env.NODE_ENV === 'production' ? process.env.PUBLIC_URL : ''
+        }
+      >
+        {renderRoutes(routes)}
+      </Router>
     </RecoilRoot>
   );
 };

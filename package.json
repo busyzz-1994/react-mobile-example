@@ -33,8 +33,8 @@
     "yup": "^0.32.9"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "start": "env-cmd -e dev react-app-rewired start",
+    "build": "env-cmd -e prod react-app-rewired build",
     "lint": "eslint src --ext .tsx,.ts,.jsx,.js --cache --fix --max-warnings=0",
     "analyz": "npm run build -- --stats && npx webpack-bundle-analyzer build/bundle-stats.json"
   },
