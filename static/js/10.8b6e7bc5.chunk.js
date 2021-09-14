@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-mobile-example"]=this["webpackJsonpreact-mobile-example"]||[]).push([[10],{318:function(e,n,t){e.exports={container:"setting_container__2cBQT"}},440:function(e,n,t){"use strict";t.r(n);t(0);var c=t(318),i=t.n(c),s=t(6);n.default=function(){return Object(s.jsxs)("div",{className:i.a.container,children:[Object(s.jsx)("div",{children:"setting"}),Object(s.jsx)("div",{children:"pageend"})]})}}}]);
+//# sourceMappingURL=10.8b6e7bc5.chunk.js.map
