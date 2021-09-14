@@ -34,6 +34,7 @@ const Login = () => {
     resolver: yupResolver(schema),
   });
   const onSubmit: SubmitHandler<Inputs> = (data) => {
+    console.log(data, 'data-');
     setLoading(true);
     setTimeout(() => {
       history.push(routesPath.home.setting);
